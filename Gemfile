@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem "factory_girl_rails", "~> 4.0"
 gem 'devise'
+gem "paperclip", "~> 4.2"
 
 group :development do
   gem 'byebug'
