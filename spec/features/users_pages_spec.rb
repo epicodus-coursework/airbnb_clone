@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "add user process" do
-  it "adds a user" do
+  it "adds a new user" do
     visit "/"
     click_on "Register"
     fill_in "Username", :with => "Mike"

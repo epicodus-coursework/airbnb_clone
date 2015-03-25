@@ -8,3 +8,7 @@
   <%= link_to "Register", new_user_registration_path %> |
   <%= link_to "Sign in", new_user_session_path %>
 <% end %>
+
+<% if user_signed_in? %>
+  <%= link_to 'Add property', new_property_path %>
+<% end %>
