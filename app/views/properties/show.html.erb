@@ -2,3 +2,9 @@
 <p><%= image_tag @property.photo.url(:medium) %></p>
 <h4><%= @property.description %></h4>
 <h4>$<%= @property.price %></h4>
+
+<% if current_user == nil %>
+<% elsif @property.user_id == current_user.id %>
+  <%= link_to 'Edit', edit_property_path(@property) %>
+  <%= link_to 'Delete', property_path(@property),:data => { :method => "delete" } %>
+<% end %>
