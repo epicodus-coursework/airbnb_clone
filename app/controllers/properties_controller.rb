@@ -16,11 +16,11 @@ class PropertiesController < ApplicationController
   end
 
   def show
-
+    @property = Property.find(params[:id])
   end
 
 private
   def property_params
-    params.require(:property).permit(:name, :description, :price)
+    params.require(:property).permit(:name, :description, :price, :photo)
   end
 end

@@ -12,3 +12,10 @@
 <% if user_signed_in? %>
   <%= link_to 'Add property', new_property_path %>
 <% end %>
+
+<% if @properties.any? %>
+  <% @properties.each do |property| %>
+    <%= link_to property.name, property_path(property) %>
+    $<%= property.price %>
+  <% end %>
+<% end %>
