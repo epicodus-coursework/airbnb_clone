@@ -15,6 +15,7 @@
 
 <% if @properties.any? %>
   <% @properties.each do |property| %>
+    <%= image_tag property.photo.url(:thumb) %>
     <%= link_to property.name, property_path(property) %>
     $<%= property.price %>
   <% end %>
