@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem "factory_girl_rails", "~> 4.0"
 gem 'devise'
 gem "paperclip", "~> 4.2"
+gem 'bootstrap-sass'
 
 group :development do
   gem 'byebug'
